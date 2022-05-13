@@ -221,7 +221,7 @@ The report also includes axial force coefficient (*CA*), side force coefficient
 one of these plots.
 
     .. _fig-pyfun-ex02-bullet-CN:
-    .. figure:: m1.50a4.0b0.0/bullet_CN.*
+    .. figure:: m1.50a4.0b0.0/bullet_CN.png
         :width: 3.2 in
         
         Iterative history on bullet (not including base) normal force
@@ -235,7 +235,7 @@ behavior at iteration 75; the residual stops dropping for a while while the
 fluxes are frozen.
 
     .. _fig-pyfun-ex02-L2:
-    .. figure:: m1.50a4.0b0.0/L2.*
+    .. figure:: m1.50a4.0b0.0/L2.png
         :width: 3.2 in
         
         Overall :math:`L_2` residual for ``bullet/m1.50a4.0b0.0``
@@ -394,7 +394,7 @@ in the Cart3D example :ref:`pycart-ex-data-arrow`, but
 the resulting ``report-mach.pdf``.
 
     .. _fig-pyfun-ex02-mach-cap-CN:
-    .. figure:: b0/mach_cap_CN.*
+    .. figure:: b0/mach_cap_CN.png
         :width: 3.5 in
         
         Mach sweep of *CN* on ``cap`` for various angles of attacks.
