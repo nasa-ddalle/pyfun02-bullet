@@ -118,13 +118,16 @@
     
     // Reports
     "Report": {
-        "Reports": ["case"],
+        "Reports": [
+            "case",
+            "mach"
+        ],
         "Archive": true,
         "case": {
             "Figures": ["Summary", "QuickHistory"],
             "Title": "pyFun Example 02: Inviscid Bullet",
             "Subtitle": "FUN3D Force, Moment, \\& Residual Report",
-            "Author": "pyCart Development Team",
+            "Author": "CAPE Development Team",
             "Affiliation": "NASA ARC/TNA",
             "Logo": "NASA_logo.pdf",
             "Frontispiece": "NASA_logo.pdf",
@@ -134,7 +137,7 @@
             "Sweeps": ["mach"],
             "Title": "pyFun Example 02: Inviscid Bullet",
             "Subtitle": "FUN3D Force \\& Moment Mach Sweeps",
-            "Author": "pyCart Development Team"
+            "Author": "CAPE Development Team"
         },
         // Definitions of sweeps
         "Sweeps": {
