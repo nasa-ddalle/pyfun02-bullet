@@ -73,6 +73,19 @@ This example contains 24 cases in the run matrix, and the computation time is
 kept low in order to run each case within a few minutes (using the serial
 version of FUN3D).
 
+**NOTE:** The ``pyFun.json`` file provided in this repo attempts to run FUN3D
+in serial mode. Most users will want to run with MPI. To do this, set *MPI*
+to ``true`` in the ``"RunControl"`` section and pick an appropriate number of
+processes to use for *NProc*. For example...
+
+    .. code-block:: javascript
+
+        "RunControl": {
+            ...
+            "MPI": true,
+            "NProc": 40
+        }
+
 Running case number 3 (note zero-based indexing) has the following output.
 
     .. code-block:: console
@@ -359,10 +372,7 @@ Running the command ``pyfun --aero`` will fill in the other two cases.
 
     .. code-block:: console
     
-        $ pyfun -I :3 --aero
-        bullet/m0.80a0.0b0.0
-        bullet/m0.80a4.0b0.0
-        bullet/m0.80a10.0b0.0
+        $ pyfun -I 3: --aero
         bullet/m0.80a30.0b0.0
           Adding new databook entry at iteration 200.
         bullet/m0.95a0.0b0.0
