@@ -4,9 +4,9 @@
         "r": "n",
         "S": "/bin/bash",
         "select": 1,
-        "ncpus": 24,
-        "mpiprocs": 24,
-        "model": "has",
+        "ncpus": 128,
+        "mpiprocs": 128,
+        "model": "rom",
         "W": "group_list=e0847",
         "q": "devel",
         "walltime": "2:00:00"
@@ -14,8 +14,11 @@
 
     "ShellCmds": [
         ". $MODULESHOME/init/bash",
-        "module load fun3d",
-        "module load pycart"
+        "module use -a /swbuild/fun3d/fun3dv14_users/modulefiles",
+        "module use -a /home5/ddalle/share/modulefiles",
+        "module load python3/3.11.5",
+        "module load FUN3D_INTG_Rome/14.2",
+        "module load cape/devel"
     ],
 
     "Namelist": "fun3d.nml",
